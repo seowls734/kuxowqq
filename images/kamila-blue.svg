@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-60 50 856 1060" role="img" aria-label="Kamilla">
+  <defs>
+    <style>
+      .o{stroke:#1f2944;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+      .t{fill:none;stroke:#1f2944;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+      .hair{fill:#2a3248}.hl{fill:none;stroke:#46506e;stroke-width:4;stroke-linecap:round}
+      .skin{fill:#f8f3f2}.shirt{fill:#7ea6df}.fold{fill:none;stroke:#5f86c4;stroke-width:4;stroke-linecap:round}
+      .eye{fill:#1c2338;transform-box:fill-box;transform-origin:center;animation:blink 6s infinite}
+      .pop path{transform-box:fill-box;transform-origin:50% 100%;animation:pop 2.6s var(--e,ease-out) infinite}
+      .pop path:nth-child(2){animation-delay:.12s}.pop path:nth-child(3){animation-delay:.24s}
+      .spk{fill:#9bbbe8;transform-box:fill-box;transform-origin:center;animation:tw 3.2s ease-in-out infinite}
+      .spk.b{animation-delay:1.4s}
+      @keyframes blink{0%,94%,100%{transform:scaleY(1)}97%{transform:scaleY(.1)}}
+      @keyframes pop{0%,55%,100%{transform:scale(1);opacity:1}70%{transform:scale(.6);opacity:.3}85%{transform:scale(1.12);opacity:1}}
+      @keyframes tw{0%,100%{transform:scale(1) rotate(0);opacity:1}50%{transform:scale(.55) rotate(45deg);opacity:.5}}
+      @media (prefers-reduced-motion: reduce){.eye,.pop path,.spk{animation:none}}
+    </style>
+    <clipPath id="arch"><path d="M-30 1040V560a398 398 0 0 1 796 0v480a40 40 0 0 1-40 40H10a40 40 0 0 1-40-40Z"/></clipPath>
+    <clipPath id="frame"><path d="M-30 0H766V1040a40 40 0 0 1-40 40H10a40 40 0 0 1-40-40V0Z"/></clipPath>
+  </defs>
+
+  <!-- ground shadow -->
+  <ellipse cx="368" cy="1092" rx="380" ry="12" fill="#9bbbe8" opacity=".28"/>
+
+  <!-- backdrop: arch in site palette, echoing the original's blue wall + dashed horizon -->
+  <g clip-path="url(#arch)">
+    <rect x="-60" y="0" width="856" height="1100" fill="#d4e3f7"/>
+    <rect x="-60" y="610" width="856" height="500" fill="#eef3fb"/>
+    <path d="M-10 608H746" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-dasharray="28 22"/>
+  </g>
+
+  <!-- sparkles -->
+  <path class="spk" d="M-6 300c1.6 18 15.6 32 33.6 33.6-18 1.6-32 15.6-33.6 33.6-1.6-18-15.6-32-33.6-33.6 18-1.6 32-15.6 33.6-33.6Z"/>
+  <path class="spk b" d="M770 760c1 11 9.5 19.5 20.5 20.5-11 1-19.5 9.5-20.5 20.5-1-11-9.5-19.5-20.5-20.5 11-1 19.5-9.5 20.5-20.5Z"/>
+
+  <!-- surprise marks -->
+  <g class="pop" fill="none" stroke="#6f98d6" stroke-width="12" stroke-linecap="round">
+    <path d="M544 84l6 34"/>
+    <path d="M584 92l-10 30"/>
+    <path d="M618 122l-24 20"/>
+  </g>
+
+  <g clip-path="url(#frame)">
+    <!-- back hair -->
+    <path class="hair o" d="M330 115C200 120 110 210 92 330c-18 120-10 230 8 320 12 70-8 150-40 220-18 40-36 62-48 76 40 2 70-22 88-52 8 50 0 90-8 110 40-18 62-70 70-120l360-14c40-70 80-110 90-130 30-60 38-140 28-220 20-50 28-100 20-150-20-140-140-262-328-255Z"/>
+    <path class="hl" d="M120 420c-8 120 6 230-12 340M160 600c6 90-6 180-30 260"/>
+
+    <!-- neck -->
+    <path class="o" fill="#e3e3ec" d="M332 540h140v110c-30 22-110 22-140 0Z"/>
+
+    <!-- oversized tee -->
+    <path class="shirt o" d="M332 640C290 652 240 668 200 690c-50 25-90 90-105 180-15 90-25 170-30 240h675c-5-80-20-160-40-240-20-70-60-130-110-155-40-20-80-45-116-70-34 31-108 31-142-5Z"/>
+    <path class="t" d="M334 646c30 48 110 48 140 2"/>
+    <path class="fold" d="M346 660c34 34 92 34 118 2"/>
+    <path class="fold" d="M250 710c22 80 50 180 66 300M600 720c22 80 40 180 50 300M390 760c18 90 36 190 42 300M150 830c50 40 120 70 190 80M650 880c-30 30-60 50-100 60"/>
+    <path class="t" d="M120 840c40 40 110 70 190 80" stroke-width="3.5"/>
+
+    <!-- hair strands falling over the shoulders -->
+    <path class="hair o" d="M236 440L226 520c20 80 60 160 92 240 10-20 14-60 10-100 12 30 22 60 18 100 18-40 16-100-4-160-14-40-20-60-24-80Z"/>
+    <path class="hair o" d="M512 440L522 520c8 80 0 160-22 230 30-10 58-30 74-52 6-50-2-120-14-178Z"/>
+    <path class="hair o" d="M600 620c20 40 30 80 26 110 16-30 20-70 8-110Z"/>
+  </g>
+
+  <!-- ear -->
+  <path class="o" fill="#f7d9dc" d="M222 470c-34-14-60 10-56 42 4 34 30 52 60 48Z"/>
+  <path d="M206 492c-14 2-20 16-14 28" fill="none" stroke="#e8a9b4" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- face -->
+  <path class="skin o" d="M270 390c0-84 60-140 150-140 88 0 136 60 136 146 0 92-64 158-146 158-84 0-140-70-140-164Z"/>
+
+  <!-- blush -->
+  <ellipse cx="336" cy="496" rx="40" ry="24" fill="#f5bcc6"/>
+  <ellipse cx="516" cy="472" rx="30" ry="24" fill="#f5bcc6"/>
+  <path d="M318 482l-6 26M334 480l-6 28M350 482l-6 26M506 460l-6 26M522 458l-6 28" stroke="#e595a3" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- worried brows -->
+  <path class="t" d="M318 350q14-8 30-4M474 340q14-4 28 4" stroke-width="5"/>
+
+  <!-- big round eyes -->
+  <ellipse class="eye" cx="332" cy="424" rx="38" ry="46"/>
+  <ellipse class="eye" cx="494" cy="410" rx="34" ry="44" style="animation-delay:.02s"/>
+  <path d="M310 450q22 16 44 0M476 436q18 14 36 0" fill="none" stroke="#3b4566" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- tiny mouth -->
+  <path class="t" d="M434 488l18 2"/>
+
+  <!-- bangs: long, split, strands between the eyes -->
+  <path class="hair o" d="M330 115C220 120 150 200 140 320c-5 60 10 120 30 160l30-10c20 50 45 90 70 130 10-40 14-80 12-130 0-70 10-130 30-170 6 30 10 45 14 52 8-32 12-52 19-72 15 40 27 90 35 125 12-25 20-55 25-85 13 25 25 45 40 60 1-35-5-65-11-85 26 15 56 23 81 25 13 50 19 120 13 200 17-25 30-55 37-80 15 30 35 45 55 50 12-20 22-50 30-90 10 30 12 55 10 70 20-70 10-170-40-240-50-70-150-120-290-115Z"/>
+  <path class="hl" d="M250 200c-30 40-50 100-50 170M330 160c-20 40-30 90-30 140M440 150c30 40 50 80 60 130M540 200c30 40 50 90 56 150"/>
+
+  <!-- cowlick -->
+  <path d="M332 118c-6-26-40-36-86-26" fill="none" stroke="#1f2944" stroke-width="12" stroke-linecap="round"/>
+  <path d="M332 118c-6-26-40-36-86-26" fill="none" stroke="#2a3248" stroke-width="4" stroke-linecap="round"/>
+</svg>
